@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            Isabelly's Portfolio
+        </title>
+        <script src="https://unpkg.com/vue"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="content">
+                <div class="tab-container">
+                    <profile-header></profile-header>
+                    <tab-item v-for="item in tabviewitems"
+                    v-bind:item="item"
+                    v-bind:key="item.id"
+                    v-bind:set-visible-index="setDetails">
+                    </tab-item>
+                </div>
+                <div class="margin-space-tab">
+                    <content-detail
+                    v-bind:details="detailsdata[index]"></content-detail>
+                </div>
+            </div>
+            
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
