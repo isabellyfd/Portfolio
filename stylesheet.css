@@ -1,0 +1,36 @@
+.content {
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: yellow;
+}
+.tab-li {
+    list-style-type: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body {
+    margin: 0px;
+}
+
+.margin-space-tab {
+    margin-left: 20px;
+    width: 80vw;
+    height: 100vh;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
