@@ -17,9 +17,18 @@ Vue.component('content-detail', {
 })
 
 Vue.component('profile-header', {
-    template: `<div sytle="display: flex;">
+    template: `
                 <img class="img-profile" src="belly.jpg" >
-             </div>`
+             `
+})
+
+Vue.component('links',{
+    template: ` <div class="links-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                `
 })
 
 var app = new Vue({

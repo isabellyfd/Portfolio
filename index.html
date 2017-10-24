@@ -12,16 +12,19 @@
             <div class="content">
                 <div class="tab-container">
                     <profile-header></profile-header>
+                    
                     <tab-item v-for="item in tabviewitems"
                     v-bind:item="item"
                     v-bind:key="item.id"
                     v-bind:set-visible-index="setDetails">
                     </tab-item>
+                    <links></links>
                 </div>
                 <div class="margin-space-tab">
                     <content-detail
                     v-bind:details="detailsdata[index]"></content-detail>
                 </div>
+                
             </div>
             
         </div>
